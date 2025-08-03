@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Load your trained model
-model = load_model('fall_detection_model.keras')  # Save your model using model.save('fall_model.h5')
+model = load_model('fall_detection_model.keras')  
 
 # Title
 st.title("🚨 Fall Detection App")
@@ -56,3 +56,4 @@ if uploaded_file:
 
     except Exception as e:
         st.error(f"Error processing the file: {e}")
+
